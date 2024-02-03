@@ -3,7 +3,7 @@ lock "~> 3.18.0"
 
 set :application, "home-recipes"
 set :repo_url, "git@github.com:nikos83/home-recipes.git"
-set :branch, fetch(:branch, "main")
+set :branch, "main"
 
 set :deploy_to, "/home/deploy/#{fetch :application}"
 
