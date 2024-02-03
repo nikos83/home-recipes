@@ -5,6 +5,7 @@ Rails.application.routes.draw do
       root to: "admin_users#index"
       resources :ingredients
       resources :recipes
+      resources :recipe_ingredients
     end
   devise_for :admin_users
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

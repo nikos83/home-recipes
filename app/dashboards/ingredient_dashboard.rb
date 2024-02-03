@@ -13,7 +13,7 @@ class IngredientDashboard < Administrate::BaseDashboard
     recipe_ingredients: Field::HasMany,
     recipes: Field::HasMany,
     created_at: Field::DateTime,
-    updated_at: Field::DateTime,
+    updated_at: Field::DateTime
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -33,8 +33,6 @@ class IngredientDashboard < Administrate::BaseDashboard
   SHOW_PAGE_ATTRIBUTES = %i[
     id
     name
-    recipe_ingredients
-    recipes
     created_at
     updated_at
   ].freeze
@@ -44,8 +42,6 @@ class IngredientDashboard < Administrate::BaseDashboard
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = %i[
     name
-    recipe_ingredients
-    recipes
   ].freeze
 
   # COLLECTION_FILTERS

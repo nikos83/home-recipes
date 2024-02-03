@@ -36,7 +36,6 @@ class RecipeDashboard < Administrate::BaseDashboard
     description
     ingredients
     name
-    recipe_ingredients
     created_at
     updated_at
   ].freeze
@@ -48,7 +47,6 @@ class RecipeDashboard < Administrate::BaseDashboard
     description
     ingredients
     name
-    recipe_ingredients
   ].freeze
 
   # COLLECTION_FILTERS
