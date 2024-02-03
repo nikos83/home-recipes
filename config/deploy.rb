@@ -1,7 +1,7 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.18.0"
 
-set :application, "dogs-visit"
+set :application, "home-recipes"
 set :repo_url, "git@github.com:nikos83/home-recipes.git"
 set :branch, fetch(:branch, "main")
 
