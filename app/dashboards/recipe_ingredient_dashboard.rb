@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "administrate/base_dashboard"
 
 class RecipeIngredientDashboard < Administrate::BaseDashboard
@@ -14,7 +16,7 @@ class RecipeIngredientDashboard < Administrate::BaseDashboard
     recipe: Field::BelongsTo,
     unit: Field::String,
     created_at: Field::DateTime,
-    updated_at: Field::DateTime,
+    updated_at: Field::DateTime
   }.freeze
 
   # COLLECTION_ATTRIBUTES
